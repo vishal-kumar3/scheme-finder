@@ -85,7 +85,7 @@ export function evaluateRules(scheme, profile) {
       case ">=":
         isMet = Number(profileValue) >= Number(value);
         reasonText = `${field} is at least ${value}`;
-        unmetText = `${field} must be at most ${value}`;
+        unmetText = `${field} must be at least ${value}`;
         break;
       case "<":
         isMet = Number(profileValue) < Number(value);
